@@ -1,0 +1,16 @@
+.key {
+    background-image:url("./resources/icon/key.svg");
+}
+.user {
+    background-image:url("./resources/icon/user.svg");
+}
+.email {
+    background-position:top center;
+    background-image:url("./resources/icon/email.svg");
+}
+.calendar {
+    background-image:url("./resources/icon/calendar.svg");
+}
+.error {
+    background:rgb(179, 86, 112) !important;
+}

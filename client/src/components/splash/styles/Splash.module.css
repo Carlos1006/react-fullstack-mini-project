@@ -1,0 +1,132 @@
+#profile {
+    width:100vw;
+    height:100vh;
+    background:black;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+#dataColumn {
+    width:50vw;
+    height:100vh;
+    background:Var(--color1);
+    background:#282a37;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+#userColumns {
+    width:50vw;
+    height:100vh;
+    position:relative;
+    background:Var(--color6);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.buttonContainer {
+    width:23vw;
+    margin-top:3vh;
+    display:flex;
+    justify-content:space-between;
+}
+.actionButton {
+    font-family:"Open Sans",sans-serif;
+    color: rgb(242, 242, 242);
+    width:11vw;
+    height:6vh;
+    background:rgb(24, 26, 33);
+    border:none;
+    display:flex;
+    font-size:0.9em;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    border-radius:1vw;
+    user-select:none;
+    cursor: pointer;
+}
+
+.message {
+    font-family:"Montserrat",sans-serif;
+    color:rgb(238, 241, 254);
+}
+#welcomeMessage {
+    font-size:1.5em;
+    font-weight:500;
+    opacity:0.7;
+    letter-spacing:0.2vw;
+    text-transform:uppercase;
+}
+#loginMessage {
+    font-size:2.5em;
+    font-weight:500;
+    display:flex;
+    position:relative;
+}
+#loginMessage>span::after {
+    content:'';
+    position:absolute;
+    height:1vh;
+    width:1vh;
+    background:rgb(131, 133, 217);
+    bottom:1vh;
+    border-radius:10px;
+}
+#signupInvitation {
+    font-size:1.1em;
+    font-weight:400;
+    margin-top:1vh;
+}
+#signupInvitation>span:first-child {
+    opacity:0.7;
+}
+#signupInvitation>span:last-child {
+    color:rgb(131, 133, 217);
+    margin-left:1vw;
+}
+
+#deleteButton {
+    color: rgba(234, 86, 86, 0.8);
+    background:rgba(20, 20, 30, 0);
+    border:1px solid rgba(242, 242, 242,0.8);
+    border-color: rgba(234, 86, 86, 0.8);
+}
+#saveChanges {
+    cursor:default !important;
+    opacity:0.3;
+    color:white;
+    transition:all 0.3s ease-in-out;
+}
+#saveChanges.changes {
+    background:rgb(131, 133, 217);
+    color:white;
+}
+#profileHeader {
+    display:flex;
+    align-items:center;
+    margin-bottom: 4vh;
+}
+#userPicture {
+    width:5vw;
+    background:Var(--color6) url("../../../resources/icon/userProfile.svg") no-repeat center;
+    background-size:auto 100%;
+    background-position:center 1vw !important;
+    height:5vw;
+    margin-right:1vw;
+    border-radius:100%;
+}
+
+.userContainer {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
